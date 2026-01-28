@@ -19,7 +19,6 @@ window.onload = function() {
       for (let k=0;k < noun.length;k++) {
         for (let h=0;h<domain.length;h++) {
           if (`${noun[k]}`.includes(`${domain[h]}`.split(".")[1])) {
-            let newDom = noun[k].split(domain[h].split(".")[1])
             console.log(`${pronoun[i]+adj[j]+noun[k].split(domain[h].split(".")[1])[0]+domain[h]}`)
           }
           else {
@@ -29,6 +28,5 @@ window.onload = function() {
       }
     }
   }
-
 
 };
